@@ -3,6 +3,9 @@
   "name": "screen-scribe-container",
   "main": "src/index.ts",
   "compatibility_date": "2025-08-10",
+  "dev": {
+    "port": 3000
+  },
   // "compatibility_flags": [
   //   "nodejs_compat"
   // ],
