@@ -33,11 +33,15 @@ app.post(
   ),
   async (c) => {
     try {
+      console.log("Sample request received");
       const { source, destination } = c.req.valid("json");
+      console.log("Source", source);
+      console.log("Destination", destination);
       const env = getEnv();
       const s3 = getS3Client();
 
       const tmpDir = await createTmpDirectory();
+      console.log("Created tmp directory", tmpDir);
       const videoPath = join(tmpDir, "downloaded.mov");
 
       await downloadFile({
