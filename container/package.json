@@ -1,0 +1,18 @@
+{
+  "name": "container",
+  "scripts": {
+    "dev": "bun run --hot src/index.ts"
+  },
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.864.0",
+    "@aws-sdk/lib-storage": "^3.864.0",
+    "@hono/zod-validator": "^0.7.2",
+    "fluent-ffmpeg": "^2.1.3",
+    "hono": "^4.9.0",
+    "p-limit": "^6.2.0",
+    "sharp": "^0.34.3"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  }
+}
