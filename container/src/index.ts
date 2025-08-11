@@ -90,6 +90,9 @@ app.post(
         frameFileKeys,
       });
     } catch (error) {
+      if (error instanceof Error) {
+        return c.json({ error: error.message }, 500);
+      }
       return c.json({ error: "Invalid request" }, 400);
     }
   }
